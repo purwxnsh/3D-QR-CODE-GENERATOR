@@ -82,10 +82,10 @@ st.markdown("""
 
 # ----------------- Sidebar Navigation -----------------
 st.sidebar.title("📂 Navigation")
-menu = st.sidebar.radio("Go to", ["🎨 Generate QR", "🏠 Home", "👩‍💻 Developer"])
+menu = st.sidebar.radio("Go to", ["🎨 Generate QR", "🏠 Info", "👩‍💻 Developer"])
 
 # ----------------- HOME -----------------
-if menu == "🏠 Home":
+if menu == "🏠 Info":
     st.markdown("<h1>✨ 3D QR Code Generator ✨</h1>", unsafe_allow_html=True)
     st.markdown("<p style='text-align:center; font-size:18px;'>A modern & beautiful QR code generator built with Python and Streamlit.</p>", unsafe_allow_html=True)
 
@@ -192,5 +192,6 @@ elif menu == "👩‍💻 Developer":
 # ----------------- Footer -----------------
 
 st.markdown("<footer>© 2025 3D QR Code Generator Project | <span class='brand'>Design by PURWANSH CHAUDAHRY</span> | Made with ❤️ in Python & Streamlit</footer>", unsafe_allow_html=True)
+
 
 
