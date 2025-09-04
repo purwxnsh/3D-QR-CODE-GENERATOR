@@ -82,7 +82,7 @@ st.markdown("""
 
 # ----------------- Sidebar Navigation -----------------
 st.sidebar.title("📂 Navigation")
-menu = st.sidebar.radio("Go to", ["🏠 Home", "🎨 Generate QR", "👩‍💻 Developer"])
+menu = st.sidebar.radio("Go to", ["🎨 Generate QR", "🏠 Home", "👩‍💻 Developer"])
 
 # ----------------- HOME -----------------
 if menu == "🏠 Home":
@@ -192,4 +192,5 @@ elif menu == "👩‍💻 Developer":
 # ----------------- Footer -----------------
 
 st.markdown("<footer>© 2025 3D QR Code Generator Project | <span class='brand'>Design by PURWANSH CHAUDAHRY</span> | Made with ❤️ in Python & Streamlit</footer>", unsafe_allow_html=True)
+
 
