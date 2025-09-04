@@ -65,21 +65,24 @@ st.markdown("""
             font-size: 14px;
         }
         .brand {
-            color: ##FF0000;
-            font-weight: bold;
-            animation: glow 1.5s ease-in-out infinite alternate;
-        }
-        @keyframes glow {
-            from { text-shadow: 0 0 5px ##FF0000, 0 0 10px ##FF0000; }
-            to { text-shadow: 0 0 20px ##FF0000, 0 0 30px ##FF0000; }
-        }
+    color: #FF0000;
+    font-weight: bold;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 5px #FF0000, 0 0 10px #FF0000; }
+    to { text-shadow: 0 0 20px #FF0000, 0 0 30px #FF0000; }
+}
+
+
     </style>
 """, unsafe_allow_html=True)
 
 
 # ----------------- Sidebar Navigation -----------------
 st.sidebar.title("📂 Navigation")
-menu = st.sidebar.radio("Go to", ["🏠 Home", "🎨 Generate QR", "ℹ️ About Project", "👩‍💻 Developer"])
+menu = st.sidebar.radio("Go to", ["🏠 Home", "🎨 Generate QR", "👩‍💻 Developer"])
 
 # ----------------- HOME -----------------
 if menu == "🏠 Home":
@@ -171,18 +174,6 @@ elif menu == "🎨 Generate QR":
         else:
             st.warning("⚠️ Please enter required details!")
 
-# ----------------- ABOUT PROJECT -----------------
-elif menu == "ℹ️ About the Project":
-    st.markdown("<h2>ℹ️ About This Project</h2>", unsafe_allow_html=True)
-    st.markdown("""
-    <div class="card">
-    📌 Project Title: 3D QR Code Generator <br><br>
-    🎯 Objective: To design a modern, interactive and customizable QR code generator application for academic & real-world use. <br><br>
-    🛠️ Tech Stack: Python, Streamlit, QRCode, PIL <br><br>
-    📊 Major Project Level: Includes multiple QR types, customizations, downloads in 3 formats, and professional UI. <br><br>
-    💡 Applications: Digital marketing, education, product packaging, event management, smart business cards.
-    </div>
-    """, unsafe_allow_html=True)
 
 # ----------------- DEVELOPER -----------------
 elif menu == "👩‍💻 Developer":
@@ -199,4 +190,5 @@ elif menu == "👩‍💻 Developer":
     """, unsafe_allow_html=True)
 
 # ----------------- Footer -----------------
+
 st.markdown("<footer>© 2025 3D QR Code Generator Project | <span class='brand'>Design by PURWANSH CHAUDAHRY</span> | Made with ❤️ in Python & Streamlit</footer>", unsafe_allow_html=True)
