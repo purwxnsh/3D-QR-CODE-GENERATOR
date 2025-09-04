@@ -182,7 +182,7 @@ elif menu == "👩‍💻 Developer":
     <div class="card">
     👩‍🎓 Name: PURWANSH CHAUDHARY <br>
     🎓 Course: Data Analyst <br>
-    🏫 Institute: AGASTYAAN TECHNOLOGIES <br>
+    🏫 Institute: AGASTYAAN TECHNOLOGY <br>
     📧 Email: purwanshchaudhary@gmail.com <br>
     🌐 Social Media: https://www.instagram.com/purwxnsh <br><br>
     🎨 <span class="brand">PURWANSH CHAUDHARY</span>
@@ -192,3 +192,4 @@ elif menu == "👩‍💻 Developer":
 # ----------------- Footer -----------------
 
 st.markdown("<footer>© 2025 3D QR Code Generator Project | <span class='brand'>Design by PURWANSH CHAUDAHRY</span> | Made with ❤️ in Python & Streamlit</footer>", unsafe_allow_html=True)
+
